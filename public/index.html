@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAF Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-container">
+    <header>
+        <h1>Web Application Firewall (WAF) Simulator</h1>
+    </header>
+    <main>
+        <form id="testForm" class="input-form">
+            <div class="input-group">
+                <label for="userInput">Test a string for vulnerabilities:</label>
+                <input type="text" id="userInput" name="userInput" placeholder="Insert malicious string..." required>
+            </div>
+            <button type="submit" class="submit-btn">Test String</button>
+        </form>
+        <div id="result" class="result-panel"></div>
+    </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
